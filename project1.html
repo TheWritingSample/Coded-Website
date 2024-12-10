@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Title - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Project Detail Section -->
+    <section id="project-detail">
+        <div class="container">
+            <h2>Project 1 Title</h2>
+            <img src="project1-large.jpg" alt="Project 1">
+            <p><strong>Project Objectives:</strong> Describe the goals and objectives of the project.</p>
+            <p><strong>My Role:</strong> Describe your role and contributions to the project.</p>
+            <p><strong>Technologies Used:</strong> List the technologies and tools used (e.g., HTML, CSS, JavaScript, React).</p>
+            <p><strong>Project Description:</strong> Provide a detailed description of the project, including any challenges faced and how you overcame them.</p>
+            <p><strong>Client Feedback:</strong> If available, include client testimonials or feedback.</p>
+            <a href="portfolio.html" class="back-button">Back to Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

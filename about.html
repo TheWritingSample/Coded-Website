@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="yourphoto.jpg" alt="Your Photo">
+                <p>Hello! I'm Andrew, a passionate web designer with over 5 years of experience in creating modern, responsive, and user-friendly websites. My journey into web design started with a love for both creativity and technology, which has allowed me to combine these passions into a rewarding career.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills and Expertise</h2>
+            <ul class="skills-list">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>UX/UI Design</li>
+                <li>Frameworks: React, Angular, Vue</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>SEO Optimization</li>
+                <li>Adobe Creative Suite</li>
+                <li>WordPress Development</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education and Certifications Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education and Certifications</h2>
+            <div class="education-item">
+                <h3>Degree</h3>
+                <p>Bachelor of English in Technical Communication</p>
+                <p>University of Central Florida, 2009</p>
+            </div>
+            <div class="education-item">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Certified Web Designer (CWD)</li>
+                    <li>Google Analytics Certification</li>
+                    <li>Certified UX Designer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.pdf" class="download-button" download>Download My Resume</a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

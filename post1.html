@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a Stunning Portfolio Website - Blog - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Blog Post Section -->
+    <section id="blog-post">
+        <div class="container">
+            <h2>How to Create a Stunning Portfolio Website</h2>
+            <p>Published on January 1, 2024 by Your Name</p>
+            <img src="post1-large.jpg" alt="How to Create a Stunning Portfolio Website">
+            <p>Welcome to the detailed guide on how to create a stunning portfolio website...</p>
+            <!-- Add more content for the blog post here -->
+            <a href="blog.html" class="back-button">Back to Blog</a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

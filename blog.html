@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <a href="post1.html">
+                        <img src="post1.jpg" alt="Post 1">
+                        <h3>How to Create a Stunning Portfolio Website</h3>
+                        <p>Learn the essential steps and design tips to build an impressive portfolio website that stands out.</p>
+                        <span>Read More</span>
+                    </a>
+                </div>
+                <div class="blog-post">
+                    <a href="post2.html">
+                        <img src="post2.jpg" alt="Post 2">
+                        <h3>Top Web Design Trends for 2024</h3>
+                        <p>Stay ahead of the curve with the latest web design trends and techniques that will dominate 2024.</p>
+                        <span>Read More</span>
+                    </a>
+                </div>
+                <div class="blog-post">
+                    <a href="post3.html">
+                        <img src="post3.jpg" alt="Post 3">
+                        <h3>Improving Website Accessibility</h3>
+                        <p>Discover how to make your website accessible to everyone, including people with disabilities.</p>
+                        <span>Read More</span>
+                    </a>
+                </div>
+                <!-- Add more blog posts as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
